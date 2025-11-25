@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
     <div
       class="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6"
     >
@@ -78,6 +78,58 @@
       <div class="flex items-end justify-between mt-5">
         <div>
           <span class="text-sm text-gray-500 dark:text-gray-400">Orders</span>
+          <h4 class="mt-2 font-bold text-gray-800 text-title-sm dark:text-white/90">5,359</h4>
+        </div>
+
+        <span
+          class="flex items-center gap-1 rounded-full bg-error-50 py-0.5 pl-2 pr-2.5 text-sm font-medium text-error-600 dark:bg-error-500/15 dark:text-error-500"
+        >
+          <svg
+            class="fill-current"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.31462 10.3761C5.45194 10.5293 5.65136 10.6257 5.87329 10.6257C5.8736 10.6257 5.8739 10.6257 5.87421 10.6257C6.0663 10.6259 6.25845 10.5527 6.40505 10.4062L9.40514 7.4082C9.69814 7.11541 9.69831 6.64054 9.40552 6.34754C9.11273 6.05454 8.63785 6.05438 8.34486 6.34717L6.62329 8.06753L6.62329 1.875C6.62329 1.46079 6.28751 1.125 5.87329 1.125C5.45908 1.125 5.12329 1.46079 5.12329 1.875L5.12329 8.06422L3.40516 6.34719C3.11218 6.05439 2.6373 6.05454 2.3445 6.34752C2.0517 6.64051 2.05185 7.11538 2.34484 7.40818L5.31462 10.3761Z"
+              fill=""
+            />
+          </svg>
+
+          9.05%
+        </span>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6"
+    >
+      <div
+        class="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-xl dark:bg-gray-800"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="24"
+               height="24"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke="currentColor"
+          >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+          </svg>
+      </div>
+
+      <div class="flex items-end justify-between mt-5">
+        <div>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Total Revenue</span>
           <h4 class="mt-2 font-bold text-gray-800 text-title-sm dark:text-white/90">5,359</h4>
         </div>
 

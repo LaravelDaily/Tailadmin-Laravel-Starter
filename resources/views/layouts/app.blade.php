@@ -83,14 +83,12 @@
             const theme = savedTheme || systemTheme;
             if (theme === 'dark') {
                 document.documentElement.classList.add('dark');
-                document.body.classList.add('dark', 'bg-gray-900');
             } else {
                 document.documentElement.classList.remove('dark');
-                document.body.classList.remove('dark', 'bg-gray-900');
             }
         })();
     </script>
-    
+
 </head>
 
 <body
