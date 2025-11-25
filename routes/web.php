@@ -1,12 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
 
 // dashboard pages
 Route::get('/', function () {
     return view('pages.dashboard.ecommerce', ['title' => 'E-commerce Dashboard']);
-})->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 // calender pages
 Route::get('/calendar', function () {
@@ -29,7 +28,6 @@ Route::get('/basic-tables', function () {
 })->name('basic-tables');
 
 // pages
-
 Route::get('/blank', function () {
     return view('pages.blank', ['title' => 'Blank']);
 })->name('blank');
@@ -47,16 +45,6 @@ Route::get('/line-chart', function () {
 Route::get('/bar-chart', function () {
     return view('pages.chart.bar-chart', ['title' => 'Bar Chart']);
 })->name('bar-chart');
-
-
-// authentication pages
-Route::get('/signin', function () {
-    return view('pages.auth.signin', ['title' => 'Sign In']);
-})->name('signin');
-
-Route::get('/signup', function () {
-    return view('pages.auth.signup', ['title' => 'Sign Up']);
-})->name('signup');
 
 // ui elements pages
 Route::get('/alerts', function () {
@@ -83,24 +71,4 @@ Route::get('/videos', function () {
     return view('pages.ui-elements.videos', ['title' => 'Videos']);
 })->name('videos');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+require __DIR__.'/auth.php';
