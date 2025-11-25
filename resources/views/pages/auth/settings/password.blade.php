@@ -14,8 +14,8 @@
 
     <x-layouts.settings title="Password" description="Update your password to keep your account secure">
         @if (session('status') === 'password-updated')
-            <div class="mb-6 rounded-lg border border-green-200 bg-green-50 p-4 text-sm text-green-800 dark:border-green-800 dark:bg-green-900/20 dark:text-green-400">
-                Password updated successfully
+            <div class="mb-6">
+                <x-ui.alert variant="success" message="Password updated successfully" />
             </div>
         @endif
 
